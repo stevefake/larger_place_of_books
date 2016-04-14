@@ -1,0 +1,29 @@
+<h1>Reservations</h1>
+<p>These are the book reservations: <%=  %></p>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th>
+        Author
+      </th>
+      <th>
+        Reservations
+      </th>
+    </tr>
+  </thead>
+</table>
+<tbody>
+  <% @reservations.each do |reservation| %>
+  <tr>
+    <td>
+      <%= reservation.reserved %>
+    </td>
+    <td>
+
+    </td>
+  </tr>
+</tbody>
+<% end %>
